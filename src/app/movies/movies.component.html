@@ -1,0 +1,12 @@
+<h2>Поиск фильма</h2>
+<input [(ngModel)]="Title" placeholder="Введите название фильма">
+<button (click)="SearchMovies()">Найти</button>
+
+<div *ngIf="Details">
+  <h3>{{ Details.Title }}</h3>
+  <p>Год выпуска: {{ Details.Year }}</p>
+  <p>Рейтинг: {{ Details.Rating }}</p>
+  <p>Длительность: {{ Details.Runtime }}</p>
+  <p>Режиссер: {{ Details.Director }}</p>
+  <p>Актерский состав: {{ Details.Actors }}</p>
+</div>
